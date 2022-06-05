@@ -9,35 +9,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/styles.css"/>
+    
+    <link rel="stylesheet" href="./css/main.min.css"/>
 </head>
 <body>
     <!--Cap-->
     <header class="page-header">
         <div class="conteiner main-div">
             <nav class="navigation">
-                <a href="" class="logo">Web<span class="title"> Studio</span>
+                <a href="" class="logo">Web<span class="navigation__title"> Studio</span>
                 </a>
                    <ul class="site-nav list">
-                       <li class="item">                                                                       
-                           <a class="site-link" href="./index.html">Студия</a></li>
-                       <li class="item">
-                           <a class="site-link current" href="./portfolio.html">Портфолио</a></li>
-                       <li class="item">
-                           <a class="site-link" href="">Контакты</a></li>
+                       <li class="site-nav__item">                                                                       
+                           <a class="site-nav__link" href="./index.html">Студия</a></li>
+                       <li class="site-nav__item">
+                           <a class="site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a></li>
+                       <li class="site-nav__item">
+                           <a class="site-nav__link" href="./contact.html">Контакты</a></li>
                    </ul>             
             </nav>            
                    <ul class="site-list list">
-                       <li class="item">  
-                        <a class="contact-link" href="mailto:info@devstudio.com" class="header-text">                 
-                             <svg class="contact-icon" width="16" height="12" >
+                       <li class="site-list__item">  
+                        <a class="site-list__link" href="mailto:info@devstudio.com" class="header-text">                 
+                             <svg class="site-list__icon" width="16" height="12" >
                                 <use href="./images/sprite-contact.svg#icon-envelope"></use>
                             </svg>  
                             info@devstudio.com</a></li>
                            
-                        <li class="item">
-                            <a class="contact-link" href="tel:+380961111111" class="header-text">
-                            <svg class="contact-icon" width="10" height="16" >
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="tel:+380961111111" class="header-text">
+                            <svg class="site-list__icon" width="10" height="16" >
                                  <use href="./images/sprite-contact.svg#icon-smartphone"></use>
                              </svg>  
                              +38 096 111 11 11</a></li>                                                                                                  
@@ -49,108 +50,108 @@
     <section class="section main">
         <h1 hidden>Our work</h1>
          <!--Filter-->
-         <div class="conteiner">
-            <h2 class="filter" hidden>Filter</h2>
-            <ul class="list-filter">
-                <li class="item-filter"><button type="button" class="button-list">Все</button></li>
-                <li class="item-filter"><button type="button" class="button-list">Веб-сайты</button></li>
-                <li class="item-filter"><button type="button" class="button-list">Приложения</button></li>
-                <li class="item-filter"><button type="button" class="button-list">Дизайн</button></li>
-                <li class="item-filter"><button type="button" class="button-list">Маркетинг</button></li>
+         <div class="conteiner filter">
+            <h2 class="filter-titl" hidden>Filter</h2>
+            <ul class="filter-list list">
+                <li class="filter-list__item"><button type="button" class="filter-list__btn">Все</button></li>
+                <li class="filter-list__item"><button type="button" class="filter-list__btn">Веб-сайты</button></li>
+                <li class="filter-list__item"><button type="button" class="filter-list__btn">Приложения</button></li>
+                <li class="filter-list__item"><button type="button" class="filter-list__btn">Дизайн</button></li>
+                <li class="filter-list__item"><button type="button" class="filter-list__btn">Маркетинг</button></li>
             </ul>
           </div>       
         <!--Project-->
-        <div class="conteiner">
-            <h2 class="progect"hidden>Project</h2>
+        <div class="conteiner project">
+            <h2 class="progect-titl" hidden>Project</h2>
             <ul class="project-list list">
-                <li class="bloc">
+                <li class="project-list_item">
                     <div class="action">
                         <img src="./images/images1/технокряк.jpg" alt="Макет Вєб-сайта" width="370" height="295">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
-                    <div class="bloc-text">  
-                        <h3 class="title">Технокряк</h3>
-                        <p class="text">Веб-сайт</p>
+                    <div class="bloc">  
+                        <h3 class="bloc__title">Технокряк</h3>
+                        <p class="bloc__text">Веб-сайт</p>
                     </div>
                 </li>
-                <li class="bloc">                    
+                <li class="project-list_item">                    
                     <div class="action">
                         <img src="./images/images1/ПостерNOGS.jpg" alt="Постер" width="370" height="295">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
-                    <div class="bloc-text">
-                    <h3 class="title">Постер New Orlean vs Golden Star</h3>
-                    <p class="text">Дизайн</p>
+                    <div class="bloc">
+                    <h3 class="bloc__title">Постер New Orlean vs Golden Star</h3>
+                    <p class="bloc__text">Дизайн</p>
                     </div>                   
                 </li>
-                <li class="bloc">                    
+                <li class="project-list_item">                    
                     <div class="action">
                         <img src="./images/images1/РесторанSeafood.jpg" alt="Макет для ресторана" width="370" height="295">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
-                    <div class="bloc-text">
-                        <h3 class="title">Ресторан Seafood</h3>
-                        <p class="text">Приложение</p>
+                    <div class="bloc">
+                        <h3 class="bloc__title">Ресторан Seafood</h3>
+                        <p class="bloc__text">Приложение</p>
                     </div>                  
                 </li>
-                <li class="bloc">
+                <li class="project-list_item">
                     <div class="action">
                         <img src="./images/images1/ПроектBoxes.jpg" alt="коробочки" width="370" height="295">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>                     
-                    <div class="bloc-text">
-                        <h3 class="title">Проект Prime</h3>
-                        <p class="text">Маркетинг</p>
+                    <div class="bloc">
+                        <h3 class="bloc__title">Проект Prime</h3>
+                        <p class="bloc__text">Маркетинг</p>
                     </div>                   
                 </li>
-                <li class="bloc">
+                <li class="project-list_item">
                     <div class="action">
                         <img src="./images/images1/ПроектBoxes.jpg" alt="коробочки" width="370" height="295">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>                   
-                    <div class="bloc-text">  
-                        <h3 class="title">Проект Boxes</h3>
-                        <p class="text">Приложение</p>
+                    <div class="bloc">  
+                        <h3 class="bloc__title">Проект Boxes</h3>
+                        <p class="bloc__text">Приложение</p>
                     </div>                   
                 </li>
-                <li class="bloc">
+                <li class="project-list_item">
                     <div class="action">
                         <img src="./images/images1/InspirationhasnoBorders.jpg" alt="монитор" width="370" height="295">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>                      
-                    <div class="bloc-text">
-                        <h3 class="title">Inspiration has no Borders</h3>
-                        <p class="text">Веб-сайт</p>
+                    <div class="bloc">
+                        <h3 class="bloc__title">Inspiration has no Borders</h3>
+                        <p class="bloc__text">Веб-сайт</p>
                     </div>                  
                 </li>
-                <li class="bloc">
+                <li class="project-list_item">
                     <div class="action">
                         <img src="./images/images1/ИзданиеLimitedEdition.jpg" alt="журнал" width="370" height="295">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>                      
-                    <div class="bloc-text">
-                        <h3 class="title">Издание Limited Edition</h3>
-                        <p class="text">Дизайн</p>
+                    <div class="bloc">
+                        <h3 class="bloc__title">Издание Limited Edition</h3>
+                        <p class="bloc__text">Дизайн</p>
                     </div>                  
                 </li>
-                <li class="bloc">
+                <li class="project-list_item">
                     <div class="action">
                         <img src="./images/images1/ПроектLAB.jpg" alt="пост-материал" width="370" height="295">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>                      
-                    <div class="bloc-text">
-                        <h3 class="title">Проект LAB</h3>
-                        <p class="text">Маркетинг</p>
+                    <div class="bloc">
+                        <h3 class="bloc__title">Проект LAB</h3>
+                        <p class="bloc__text">Маркетинг</p>
                     </div>                   
                 </li>
-                <li class="bloc">
+                <li class="project-list_item">
                     <div class="action">
                         <img src="./images/images1/GrowingBusiness.jpg" alt="ноут с веб-сайтом" width="370" height="295">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>                     
-                    <div class="bloc-text">
-                        <h3 class="title">Growing Business</h3>
-                        <p class="text">Приложение</p>
+                    <div class="bloc">
+                        <h3 class="bloc__title">Growing Business</h3>
+                        <p class="bloc__text">Приложение</p>
                     </div>                    
                 </li>
             </ul>
@@ -160,7 +161,7 @@
     </main>
     <!--Attic-->
     <footer class="footer">    
-        <div class="conteiner footer">
+        <div class="conteiner footer-conteiner">
             <div class="box-logo">
                 <a href="" class="logo-footer">
                     Web<span class="title-footer"> Studio</span>
@@ -174,32 +175,32 @@
                 </div>
             </div>
                 <div class="conteiner join">
-                <h2 class="join-titl">присоединяйтесь</h2>
+                <h2 class="join__titl">присоединяйтесь</h2>
                 <ul class="join-list list">
-                    <li class="join-item">
-                                    <a class="join-link" href aria-label="instagram" target="_blank">
-                                        <svg class="join-icon" width="20" height="20">
+                    <li class="join-list__item">
+                                    <a class="join-list__link" href aria-label="instagram" target="_blank">
+                                        <svg class="join-list__icon" width="20" height="20">
                                             <use href="./images/sprite-socialnetwork.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                     </li>
-                    <li class="join-item">
-                                    <a class="join-link" href aria-label="twitter" target="_blank">
-                                        <svg class="join-icon" width="20" height="20">
+                    <li class="join-list__item">
+                                    <a class="join-list__link" href aria-label="twitter" target="_blank">
+                                        <svg class="join-list__icon" width="20" height="20">
                                             <use href="./images/sprite-socialnetwork.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                     </li>
-                    <li class="join-item">
-                                    <a class="join-link" href aria-label="facebook" target="_blank">
-                                        <svg class="join-icon" width="20" height="20">
+                    <li class="join-list__item">
+                                    <a class="join-list__link" href aria-label="facebook" target="_blank">
+                                        <svg class="join-list__icon" width="20" height="20">
                                             <use href="./images/sprite-socialnetwork.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                     </li>
-                    <li class="join-item">
-                                    <a class="join-link" href aria-label="linkedin" target="_blank">
-                                        <svg class="join-icon" width="20" height="20">
+                    <li class="join-list__item">
+                                    <a class="join-list__link" href aria-label="linkedin" target="_blank">
+                                        <svg class="join-list__icon" width="20" height="20">
                                             <use href="./images/sprite-socialnetwork.svg#icon-linkedin"></use>
                                         </svg>
                                     </a>
@@ -211,14 +212,14 @@
                 <Form class="subscriber-form" autocomplete="off">
                     <label for="user_email" class="form-hidden">E-mail</label>
                         <input class="subscriber-email" type="email" name="email" id="user_email" placeholder="E-mail"/>
-                        <button type="submit" class="hero-button">Подписаться
+                        <button type="submit" class="subscriber-btn">Подписаться
                             <svg class="send-icon" width="24" height="24">
                                 <use href="./images/sprite-modal-icon.svg#icon-icon-send-1"></use>
                             </svg>
                         </button>                      
                 </Form>
             </div>
-        </div>      
+        </div>        
     </footer>
 </body>
 </html>
