@@ -3,8 +3,8 @@
     background-color: #F5F4FA;
 }
 .team-conteiner {
-    padding-top: 30px;
-    padding-bottom: 30px;  
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .team-list {
     display: flex;
@@ -23,17 +23,6 @@
         margin-right: 0;
     }
 }
-/*.team-list__item { 
-    display: flex;
-  
-    color: var(--primary-text-color);
-    font-family: inherit;  
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none; 
-}*/
 
 .team-box {
     padding-top: 30px;
